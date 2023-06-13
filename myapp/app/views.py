@@ -1,7 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from app.models import Bio
 
-
+def home(request):
+    key =Bio.objects.all()
+    return render(request,"sample.html",{"data":key})
 def Index(request):
     return render(request,"index.html",{})
 
