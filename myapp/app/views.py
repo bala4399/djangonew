@@ -12,3 +12,5 @@ def Index2(request):
     return render(request,"index2.html",{})
 
 # Create your views here.
+def temp(request):
+    return render(request,"temp.html",{})
