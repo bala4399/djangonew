@@ -24,4 +24,6 @@ urlpatterns = [
     path("test",views.Index2,name="Index2"),
     path('admin/', admin.site.urls),
     path("temp",include("app.urls")),
+    path("newuser",views.Index3,name="Index3"),
+    path("register",views.Register,name="register"),
 ]
